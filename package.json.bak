@@ -1,0 +1,39 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "start": "node app.js",
+  "test": "echo \"No tests yet\" && exit 0"
+}
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ress-0722/practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "htt
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ress-0722/practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ress-0722/practice/issues"
+  },
+  "homepage": "https://github.com/Ress-0722/practice#readme"
+}
