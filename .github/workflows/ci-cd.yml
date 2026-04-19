@@ -1,0 +1,36 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+
+      - name: Build Docker image
+        run: docker build -t myapp .
+
+      - name: Run container (test)
+        run: docker run -d -p 3000:3000 myapp
+
+      - name: Verify app
+        run: curl http://localhost:3000 || true
+
+      - name: Deploy (placeholder)
+        run: echo "Deploy step goes here"
