@@ -4,9 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-  "start": "node app.js",
-  "test": "echo \"No tests yet\" && exit 0"
-},
+    "start": "node app.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ress-0722/practice.git"
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Ress-0722/practice/issues"
   },
-  "homepage": "https://github.com/Ress-0722/practice#readme"
+  "homepage": "https://github.com/Ress-0722/practice#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
 }
